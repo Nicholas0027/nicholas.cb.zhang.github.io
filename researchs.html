@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chengbo Zhang (张承博) - Personal Academic Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            max-width: 1200px;
+            margin: auto;
+            line-height: 1.6;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-bottom: 1px solid #ccc;
+        }
+        .content {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            padding: 20px;
+        }
+        .sidebar {
+            width: 25%;
+            padding: 20px;
+            border-right: 1px solid #ccc;
+            background-color: #f9f9f9;
+            text-align: left;
+        }
+        .main-content {
+            width: 70%;
+            padding: 20px;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        img {
+            border-radius: 50%;
+            width: 150px;
+            margin-bottom: 20px;
+        }
+        .contact {
+            list-style-type: none;
+            padding: 0;
+            margin: 10px 0;
+        }
+        .contact li {
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+            text-align: left;
+        }
+        h1 {
+            font-size: 1.5rem;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        h2 {
+            font-size: 1.5rem;
+            color: #2c3e50;
+            margin-top: 20px;
+        }
+        h3 {
+            font-size: 1.0rem;
+            color: #2c3e50;
+            font-weight: 400;
+            margin: 0;
+        }
+        a {
+            color: #007acc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .news {
+            margin-top: 30px;
+        }
+        .news-item {
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+        .news-item a {
+            color: #e74c3c;
+            text-decoration: none;
+        }
+        .news-item a:hover {
+            text-decoration: underline;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li {
+            margin-bottom: 0;
+        }
+        nav ul li a {
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.3rem;
+            color: #666;
+        }
+        nav ul li a:hover {
+            color: #007acc;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="researchs.html">Researchs</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <div class="sidebar">
+            <header>
+                <img src="images/profile.jpg" alt="Your Photo">
+                <div>
+                    <h1>Chengbo Zhang</h1>
+                    <h3>Master Student in Urban Planning</h3>
+                    <ul class="contact">
+                        <li>📍 Shenzhen, China</li>
+                        <li>✉️ <a href="mailto:zhangcb0027@foxmail.com">zhangcb0027@foxmail.com</a></li>
+                        <li>🐦 <a href="https://x.com/neeeo37731?s=05">Twitter</a></li>
+                        <li>🔗 <a href="https://linkedin.com/in/your_linkedin" target="_blank">LinkedIn</a></li>
+                        <li>🐙 <a href="https://github.com/Nicholas0027" target="_blank">GitHub</a></li>
+                        <li>📒 <a href="https://scholar.google.com/citations?user=c6YsYRwAAAAJ&hl=zh-CN&oi=sra" target="_blank">Google Scholar</a></li>
+                    </ul>
+                </div>
+            </header>
+        </div>
+
+        <div class="main-content">
+            <section>
+                <h2>Spatiotemporal Data Mining of Instant Delivery Network</h2>
+                <p>Digital Consumption and Living Space</p>
+                <ul>
+                    <li><strong>Uncover the Dynamic Community Structure of Instant Delivery Network</strong> (In Progress)</li>
+                    <img src="images/research/Dycom.gif" alt="Dynamic Community Structure of Instant Delivery Network">
+                    <li><strong>Prediction of Instant Delivery Demand Using Multi-Spatial-Interaction Graph Convolutional Networks</strong> (In Progress)</li>
+                    <img src="images/research/msiGcn.jpg" alt="Prediction of Instant Delivery Demand">
+                </ul>
+              
+                <h2>Association of Active Travel and Urban Environment</h2>
+                <p>Active Travel</p>
+                <ul>
+                    <li><strong>Community Park Visits Determined by the Interaction Between Built Environment Attributes</strong> (Published in <em>Applied Geography</em>)</li>
+                    <img src="images/research/park_rf.jpg" alt="Community Park Visits and Built Environment Interaction">
+                    <li><strong>Spatial Heterogeneous Environmental Effect on Outdoor Jogging</strong> (Under Review)</li>
+                    <img src="images/research/jogging_mgwr.jpg" alt="Spatial Heterogeneous Environmental Effect on Outdoor Jogging">
+                    <li><strong>Environmental Influencing Patterns on the Pace of Active Leisure Travel</strong> (Under Review)</li>
+                    <img src="images/research/threeSpeed.jpg" alt="Environmental Influencing Patterns on Active Leisure Travel Pace">
+                </ul>
+            </section>
+          
+        
+            <section class="news">
+                <h2>News</h2>
+                <div class="news-item">
+                    <strong>[09/2024]</strong> <a href="https://doi.org/10.1016/j.apgeog.2024.103423">Article published in <em>Applied Geography</em>.</a>
+                </div>
+                <div class="news-item">
+                    <strong>[08/2024]</strong> <a href="https://mp.weixin.qq.com/s/WO44JrBKnHzDvdSNtaE3xQ">First Prize in Chengyuan Cup Planning Decision Support Model Competition</a>
+                </div>
+                <div class="news-item">
+                    <strong>[07/2024]</strong> <a href="#">First Prize in The National College Student Statistical Modeling Competition</a>
+                </div>
+            </section>
+        
+            <footer>
+                <p>Last updated: October 2024</p>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
