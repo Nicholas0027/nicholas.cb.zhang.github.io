@@ -16,59 +16,87 @@
             margin: auto;
             line-height: 1.6;
             display: flex;
+            flex-direction: row;
+            gap: 20px;
         }
         nav {
-            width: 20%;
+            width: 25%;
             padding: 20px;
             border-right: 1px solid #ccc;
+            background-color: #f9f9f9;
         }
         .content {
-            width: 80%;
+            width: 70%;
             padding: 20px;
         }
         header {
             display: flex;
             align-items: center;
             margin-bottom: 20px;
+            flex-direction: column;
+            text-align: center;
         }
         img {
             border-radius: 50%;
             width: 150px;
-            margin-right: 20px;
+            margin-bottom: 20px;
         }
         .contact {
             list-style-type: none;
             padding: 0;
+            margin: 10px 0;
         }
         .contact li {
-            margin-bottom: 5px;
+            margin-bottom: 10px;
+            font-size: 1rem;
         }
-        h1, h2, h3 {
+        h1 {
+            font-size: 1.8rem;
             color: #2c3e50;
+        }
+        h2 {
+            font-size: 1.6rem;
+            color: #2c3e50;
+            margin-top: 20px;
+        }
+        h3 {
+            font-size: 1.2rem;
+            color: #2c3e50;
+            font-weight: 400;
+            margin: 0;
         }
         a {
             color: #007acc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
         .news {
             margin-top: 30px;
         }
         .news-item {
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            font-size: 1rem;
         }
         .news-item a {
             color: #e74c3c;
             text-decoration: none;
+        }
+        .news-item a:hover {
+            text-decoration: underline;
         }
         nav ul {
             list-style: none;
             padding: 0;
         }
         nav ul li {
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
         nav ul li a {
             text-decoration: none;
             font-weight: bold;
+            font-size: 1.1rem;
             color: #2c3e50;
         }
         nav ul li a:hover {
@@ -80,9 +108,9 @@
 <body>
     <nav>
         <ul>
-            <li><a href="#">Homepage</a></li>
-            <li><a href="#">CV</a></li>
-            <li><a href="#">Publications</a></li>
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="publications.html">Publications</a></li>
         </ul>
         <header>
             <img src="images/profile.jpg" alt="Your Photo">
@@ -92,7 +120,7 @@
                 <ul class="contact">
                     <li>📍 Shenzhen, China</li>
                     <li>✉️ <a href="mailto:zhangcb0027@foxmail.com">zhangcb0027@foxmail.com</a></li>
-                    <li>🐦 <a href="https://x.com/neeeo37731?s=05">Twitter</a></li>
+                    <li>🐦 <a href="https://twitter.com/your_twitter" target="_blank">Twitter</a></li>
                     <li>🔗 <a href="https://linkedin.com/in/your_linkedin" target="_blank">LinkedIn</a></li>
                     <li>🐙 <a href="https://github.com/Nicholas0027" target="_blank">GitHub</a></li>
                     <li>📒 <a href="https://scholar.google.com/citations?user=c6YsYRwAAAAJ&hl=zh-CN&oi=sra" target="_blank">Google Scholar</a></li>
@@ -104,10 +132,10 @@
     <div class="content">
         <section>
             <h2>Biography</h2>
-            <p>I am Chengbo Zhang (in Chinese, 张承博), a second-year master student at Harbin Institute of Technology (Shenzhen). I received my B.Eng. degree on urban planning in Xiamen University. I have great interest in the following topics:</p>
+            <p>I am Chengbo Zhang (in Chinese, 张承博), a second-year master student at Harbin Institute of Technology (Shenzhen). I received my B.Eng. degree in urban planning from Xiamen University. I have great interest in the following topics:</p>
             <ul>
-                <li>Transport geography, espacially spatial interaciton network</li>
-                <li>Instant logistics and on-demand service</li>
+                <li>Transport geography, especially spatial interaction networks</li>
+                <li>Instant logistics and on-demand services</li>
                 <li>GeoAI and urban science</li>
             </ul>
             <p>Contact: <a href="mailto:zhangcb0027@foxmail.com">zhangcb0027@foxmail.com</a></p>
@@ -118,6 +146,7 @@
             <div class="news-item">
                 <strong>[09/2024]</strong> <a href="#">Publication on Applied Geography.</a>
             </div>
+        </section>
 
         <footer>
             <p>Last updated: October 2024</p>
