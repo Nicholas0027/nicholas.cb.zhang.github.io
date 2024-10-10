@@ -15,24 +15,35 @@
             max-width: 1200px;
             margin: auto;
             line-height: 1.6;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-bottom: 1px solid #ccc;
+        }
+        .content {
             display: flex;
             flex-direction: row;
             gap: 20px;
+            padding: 20px;
         }
-        nav {
+        .sidebar {
             width: 25%;
             padding: 20px;
             border-right: 1px solid #ccc;
             background-color: #f9f9f9;
+            text-align: center;
         }
-        .content {
+        .main-content {
             width: 70%;
             padding: 20px;
         }
         header {
             display: flex;
             align-items: center;
-            margin-bottom: 20px;
             flex-direction: column;
             text-align: center;
         }
@@ -48,14 +59,16 @@
         }
         .contact li {
             margin-bottom: 10px;
-            font-size: 1rem;
+            font-size: 0.9rem;
+            text-align: left;
         }
         h1 {
-            font-size: 1.8rem;
+            font-size: 1.5rem;
             color: #2c3e50;
+            margin-bottom: 5px;
         }
         h2 {
-            font-size: 1.6rem;
+            font-size: 1.5rem;
             color: #2c3e50;
             margin-top: 20px;
         }
@@ -89,9 +102,11 @@
         nav ul {
             list-style: none;
             padding: 0;
+            display: flex;
+            gap: 20px;
         }
         nav ul li {
-            margin-bottom: 15px;
+            margin-bottom: 0;
         }
         nav ul li a {
             text-decoration: none;
@@ -112,45 +127,50 @@
             <li><a href="cv.html">CV</a></li>
             <li><a href="publications.html">Publications</a></li>
         </ul>
-        <header>
-            <img src="images/profile.jpg" alt="Your Photo">
-            <div>
-                <h1>Chengbo Zhang (张承博)</h1>
-                <h3>Master Student at Harbin Institute of Technology (Shenzhen)</h3>
-                <ul class="contact">
-                    <li>📍 Shenzhen, China</li>
-                    <li>✉️ <a href="mailto:zhangcb0027@foxmail.com">zhangcb0027@foxmail.com</a></li>
-                    <li>🐦 <a href="https://twitter.com/your_twitter" target="_blank">Twitter</a></li>
-                    <li>🔗 <a href="https://linkedin.com/in/your_linkedin" target="_blank">LinkedIn</a></li>
-                    <li>🐙 <a href="https://github.com/Nicholas0027" target="_blank">GitHub</a></li>
-                    <li>📒 <a href="https://scholar.google.com/citations?user=c6YsYRwAAAAJ&hl=zh-CN&oi=sra" target="_blank">Google Scholar</a></li>
-                </ul>
-            </div>
-        </header>
     </nav>
 
     <div class="content">
-        <section>
-            <h2>Biography</h2>
-            <p>I am Chengbo Zhang (in Chinese, 张承博), a second-year master student at Harbin Institute of Technology (Shenzhen). I received my B.Eng. degree in urban planning from Xiamen University. I have great interest in the following topics:</p>
-            <ul>
-                <li>Transport geography, especially spatial interaction networks</li>
-                <li>Instant logistics and on-demand services</li>
-                <li>GeoAI and urban science</li>
-            </ul>
-            <p>Contact: <a href="mailto:zhangcb0027@foxmail.com">zhangcb0027@foxmail.com</a></p>
-        </section>
+        <div class="sidebar">
+            <header>
+                <img src="images/profile.jpg" alt="Your Photo">
+                <div>
+                    <h1>Chengbo Zhang (张承博)</h1>
+                    <h3>Secon-year Master Student at Harbin Institute of Technology (Shenzhen)</h3>
+                    <ul class="contact">
+                        <li>📍 Shenzhen, China</li>
+                        <li>✉️ <a href="mailto:zhangcb0027@foxmail.com">zhangcb0027@foxmail.com</a></li>
+                        <li>🐦 <a href="https://twitter.com/your_twitter" target="_blank">Twitter</a></li>
+                        <li>🔗 <a href="https://linkedin.com/in/your_linkedin" target="_blank">LinkedIn</a></li>
+                        <li>🐙 <a href="https://github.com/Nicholas0027" target="_blank">GitHub</a></li>
+                        <li>📒 <a href="https://scholar.google.com/citations?user=c6YsYRwAAAAJ&hl=zh-CN&oi=sra" target="_blank">Google Scholar</a></li>
+                    </ul>
+                </div>
+            </header>
+        </div>
 
-        <section class="news">
-            <h2>News</h2>
-            <div class="news-item">
-                <strong>[09/2024]</strong> <a href="#">Publication on Applied Geography.</a>
-            </div>
-        </section>
+        <div class="main-content">
+            <section>
+                <h2>Biography</h2>
+                <p>I am Chengbo Zhang (in Chinese, 张承博), a second-year master student at Harbin Institute of Technology (Shenzhen). I received my B.Eng. degree in urban planning from Xiamen University. I have great interest in the following topics:</p>
+                <ul>
+                    <li>Transport geography, especially spatial interaction networks</li>
+                    <li>Instant logistics and on-demand services</li>
+                    <li>GeoAI and urban science</li>
+                </ul>
+                <p>Contact: <a href="mailto:zhangcb0027@foxmail.com">zhangcb0027@foxmail.com</a></p>
+            </section>
 
-        <footer>
-            <p>Last updated: October 2024</p>
-        </footer>
+            <section class="news">
+                <h2>News</h2>
+                <div class="news-item">
+                    <strong>[09/2024]</strong> <a href="#">Publication on Applied Geography.</a>
+                </div>
+            </section>
+
+            <footer>
+                <p>Last updated: October 2024</p>
+            </footer>
+        </div>
     </div>
 </body>
 
