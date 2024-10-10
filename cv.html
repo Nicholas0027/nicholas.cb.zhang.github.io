@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chengbo Zhang (CV)</title>
+    <title>Chengbo Zhang (张承博) - Personal Academic Website</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,19 +25,97 @@
             border-bottom: 1px solid #ccc;
         }
         .content {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
             padding: 20px;
+        }
+        .sidebar {
+            width: 25%;
+            padding: 20px;
+            border-right: 1px solid #ccc;
+            background-color: #f9f9f9;
+            text-align: left;
+        }
+        .main-content {
+            width: 70%;
+            padding: 20px;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        img {
+            border-radius: 50%;
+            width: 150px;
+            margin-bottom: 20px;
+        }
+        .contact {
+            list-style-type: none;
+            padding: 0;
+            margin: 10px 0;
+        }
+        .contact li {
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+            text-align: left;
+        }
+        h1 {
+            font-size: 1.5rem;
+            color: #2c3e50;
+            margin-bottom: 5px;
         }
         h2 {
             font-size: 1.5rem;
             color: #2c3e50;
             margin-top: 20px;
         }
-        ul {
-            list-style-type: none;
-            padding-left: 0;
+        h3 {
+            font-size: 1.0rem;
+            color: #2c3e50;
+            font-weight: 400;
+            margin: 0;
         }
-        li {
-            margin-bottom: 10px;
+        a {
+            color: #007acc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .news {
+            margin-top: 30px;
+        }
+        .news-item {
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+        .news-item a {
+            color: #e74c3c;
+            text-decoration: none;
+        }
+        .news-item a:hover {
+            text-decoration: underline;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li {
+            margin-bottom: 0;
+        }
+        nav ul li a {
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.3rem;
+            color: #666;
+        }
+        nav ul li a:hover {
+            color: #007acc;
         }
     </style>
 </head>
@@ -47,39 +125,65 @@
         <ul>
             <li><a href="index.html">Homepage</a></li>
             <li><a href="cv.html">CV</a></li>
-            <li><a href="publications.html">Publications</a></li>
+            <li><a href="researchs.html">Researchs</a></li>
         </ul>
     </nav>
 
     <div class="content">
-        <section>
-            <h2>Education</h2>
-            <ul>
-                <li>Bachelor of Urban Planning, Xiamen University, Sept. 2017 - June 2021</li>
-                <li>Master Student in Urban Science, Harbin Institute of Technology (Shenzhen), Sept. 2022 - Present</li>
-            </ul>
-        </section>
+        <div class="sidebar">
+            <header>
+                <img src="images/profile.jpg" alt="Your Photo">
+                <div>
+                    <h1>Chengbo Zhang</h1>
+                    <h3>Master Student in Urban Planning</h3>
+                    <ul class="contact">
+                        <li>📍 Shenzhen, China</li>
+                        <li>✉️ <a href="mailto:zhangcb0027@foxmail.com">zhangcb0027@foxmail.com</a></li>
+                        <li>🐦 <a href="https://x.com/neeeo37731?s=05">Twitter</a></li>
+                        <li>🔗 <a href="https://linkedin.com/in/your_linkedin" target="_blank">LinkedIn</a></li>
+                        <li>🐙 <a href="https://github.com/Nicholas0027" target="_blank">GitHub</a></li>
+                        <li>📒 <a href="https://scholar.google.com/citations?user=c6YsYRwAAAAJ&hl=zh-CN&oi=sra" target="_blank">Google Scholar</a></li>
+                    </ul>
+                </div>
+            </header>
+        </div>
 
-        <section>
-            <h2>Work Experience</h2>
-            <ul>
-                <li>Research Assistant, Harbin Institute of Technology (Shenzhen), Sept. 2022 - Present</li>
-                <li>Intern, Urban Planning Bureau, Xiamen, July 2020 - August 2020</li>
-            </ul>
-        </section>
+        <div class="main-content">
+            <section>
+                <h2>Education</h2>
+                <ul>
+                    <li>Bachelor of Urban Planning, Xiamen University, Sept. 2017 - June 2021</li>
+                    <li>Master Student in Urban Science, Harbin Institute of Technology (Shenzhen), Sept. 2022 - Present</li>
+                </ul>
+            </section>
+    
+            <section>
+                <h2>Work Experience</h2>
+                <ul>
+                    <li>Data Analysis Intern, CITORYTECH Company Limited (citory.tech), Dec. 2022 - Feb. 2023</li>
+                    <li>Intern Planner, Smart City Center, Beijing Tsinghua Tongheng Urban Planning & Design Institute (THUPDI), Jul. 2022 - Nov. 2022</li>
+                    <li>Digital Planning Intern, Planning Technology Department of Xiamen Research Center of Urban Planning Digital Technology, Jul. 2021 - Sept. 2020</li>
+                </ul>
+            </section>
+    
+            <section>
+                <h2>Awards</h2>
+                <ul>
+                    <li>First Prize, Chengyuan Cup Planning Decision Support Model Design Competition, 2024</li>
+                    <li>First Prize (campus and province) and Third Prize (national), National College Student Statistical Modeling Competition, 2023</li>
+                    <li>Merit Student for three consecutive years (2020-2023)</li>
+                    <li>"100 Best Award" in the City Design track at the Digital China Innovation Contest, 2022</li>
+                    <li>"Nomination Award (Second Prize)" in the International Urban Design Competition, 2022</li>
+                    <li>"Inclusion Award" in the Resource Planning track at the Xiamen Big Data Security and Open Innovation Application Contest, 2021</li>
+                    <li>"Commendation Award" in the National College Student Rural Planning Scheme Competition for the year 2020</li>
+                    
+                </ul>
+            </section>
 
-        <section>
-            <h2>Awards</h2>
-            <ul>
-                <li>First Prize, Chengyuan Cup Planning Decision Support Model Design Competition, 2024</li>
-                <li><li>First Prize (campus and province) and Third Prize (national), National College Student Statistical Modeling Competition, 2023</li>
-                <li>Merit Student for three consecutive years（2020-2023）</li>
-            </ul>
-        </section>
-
-        <footer>
-            <p>Last updated: October 2024</p>
-        </footer>
+            <footer>
+                <p>Last updated: October 2024</p>
+            </footer>
+        </div>
     </div>
 </body>
 
