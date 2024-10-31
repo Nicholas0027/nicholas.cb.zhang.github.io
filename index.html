@@ -26,20 +26,23 @@
         }
         .content {
             display: flex;
-            flex-direction: row;
+            flex-direction: column; /* 改为垂直方向排列 */
             gap: 20px;
             padding: 20px;
         }
+        
         .sidebar {
-            width: 25%;
+            width: 100%; /* 设置为100%，以便占满宽度 */
             padding: 20px;
-            border-right: 1px solid #ccc;
+            border-bottom: 1px solid #ccc; /* 把原来的右边框改为下边框 */
             background-color: #f9f9f9;
-            text-align: left;
+            text-align: center;
         }
+        
         .main-content {
-            width: 70%;
+            width: 100%; /* 设置为100%，以便占满宽度 */
             padding: 20px;
+        }
         }
         header {
             display: flex;
@@ -168,7 +171,7 @@
             <section class="news">
                 <h2>News</h2>
                 <div class="news-item">
-                    <strong>[10/2024]</strong> <a href="https://contest.geoscene.cn/detail/315">First Prize in Yizhirui GIS Development Competition!</em>.</a>
+                    <strong>[10/2024]</strong> <a href="https://contest.geoscene.cn/detail/315">First Prize in Geoscene GIS Development Competition!</em>.</a>
                 </div>
                 <div class="news-item">
                     <strong>[09/2024]</strong> <a href="https://doi.org/10.1016/j.apgeog.2024.103423">Paper published in <em>Applied Geography</em>!</a>
