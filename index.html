@@ -57,12 +57,20 @@
             padding: 0;
             margin: 10px 0;
         }
-        .counter-link {
-            display: inline-block; /* 使其可以设置宽高 */
-            text-align: center; /* 使内容居中 */
-            width: 90px; /* 设置计数器的宽度 */
-            height: auto; /* 自适应高度 */
-            border: none; /* 去掉边框 */
+        .contact li {
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+            text-align: left;
+        }
+        .counter-link img {
+            width: 75px; /* Set the desired width */
+            height: auto; /* Maintain aspect ratio */
+            margin: 0; /* Remove any margin */
+        }
+        .page-view-counter {
+            display: flex; /* 使用 Flexbox */
+            align-items: center; /* 垂直居中对齐 */
+            gap: 10px; /* 设置元素间距 */
         }
         h1 {
             font-size: 1.5rem;
@@ -188,19 +196,19 @@
                     <strong>[07/2024]</strong> <a href="#">First Prize in The National College Student Statistical Modeling Competition</a>
                 </div>
             </section>
-            
+
             <footer>
                 <p>Last updated: October 2024</p>
-                <p>
-                    Page views</p>
-                <div class="counter-link">
-                    <a href="https://www.hitwebcounter.com" target="_blank">
-                        <img src="https://hitwebcounter.com/counter/counter.php?page=17175644&style=0024&nbdigits=5&type=page&initCount=0" title="Counter Widget" alt="Visit counter For Websites" />
-                    </a>
-                </div>
             </footer>
+            <div class="page-view-counter">
+                <p>Page views</p>
+                <a href="https://www.hitwebcounter.com" target="_blank" class="counter-link">
+                    <img src="https://hitwebcounter.com/counter/counter.php?page=17175644&style=0024&nbdigits=5&type=page&initCount=0" title="Counter Widget" alt="Visit counter For Websites" />
+                </a>
+            </div>
         </div>
     </div>
 </body>
 
 </html>
+
