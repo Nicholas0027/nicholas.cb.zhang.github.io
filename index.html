@@ -221,7 +221,13 @@
             </section>
 
             <footer>
-                <p>Last updated: April 2024</p>
+                <p id="last-updated"></p>
+                <script>
+                    const now = new Date();
+                    const options = { year: 'numeric', month: 'long' };
+                    const formattedDate = now.toLocaleDateString('en-US', options);
+                    document.getElementById('last-updated').textContent = `Last updated: ${formattedDate}`;
+                </script>
             </footer>
             <div class="page-view-counter">
                 <p><em>Page views</em></p>
