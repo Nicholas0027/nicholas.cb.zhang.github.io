@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta property="og:title" content="Agentic City Lab Identity">
+<meta property="og:description" content="The Agentic City Lab mark (Stencil ACL), its construction, colour, glyph system and typography.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#07080B">
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<title>Agentic City Lab Identity</title>
+<meta name="description" content="The Agentic City Lab mark (Stencil ACL), its construction, colour, glyph system and typography.">
+<link rel="stylesheet" href="../../assets/fonts/fonts.css">
+<link rel="stylesheet" href="../../assets/base.css">
+<style>
+
+.lt{--bg:#FFFFFF;--fg:#0B0D12;--fg-2:#464C5B;--fg-3:#7D8494;--human:#E58A00;--agent:#2438FF;--street:#D8DCE4;--gridot:#C2C7D2;--line:#E1E4EA;background:var(--bg);color:var(--fg)}
+.gr{--bg:#151821;background:var(--bg)}
+
+.intro{padding-block:clamp(44px,6vw,88px) clamp(28px,4vw,44px)}
+.intro .mono{color:var(--agent-2);margin-bottom:16px}
+.intro h1{font-size:clamp(2.4rem,5.6vw,4.8rem);font-weight:800;font-stretch:112%;font-variation-settings:"wdth" 112;letter-spacing:-.028em;line-height:.98;max-width:16ch}
+.intro p{margin-top:20px;font-family:var(--font-serif);color:var(--fg-2);font-size:1.16rem;max-width:64ch}
+.legend{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--line-2);margin-top:36px}
+.legend div{padding:16px 18px 16px 0;display:flex;gap:12px;align-items:center;border-right:1px solid var(--line);margin-right:18px}
+.legend div:last-child{border-right:0;margin-right:0}
+.legend svg{width:34px;height:34px;flex:none}
+.legend b{display:block;font-size:.95rem}
+.legend span{font-size:.86rem;color:var(--fg-2)}
+@media (max-width:820px){.legend{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+.opt{border-top:1px solid var(--line-2);padding-block:clamp(40px,5vw,72px)}
+.o-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:20px 48px;margin-bottom:28px;align-items:end}
+.o-head .n{font-family:var(--font-mono);color:var(--fg-3);font-size:.78rem;letter-spacing:.08em}
+.o-head h2{font-size:clamp(1.8rem,3.4vw,2.8rem);font-stretch:112%;font-variation-settings:"wdth" 112;margin-top:8px}
+.o-head .rec{display:inline-block;margin-top:12px;font-family:var(--font-mono);font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;background:var(--agent);color:#fff;padding:4px 8px;border-radius:3px}
+.o-head p{font-family:var(--font-serif);color:var(--fg-2);font-size:1.06rem}
+.o-head ul{margin-top:10px;display:grid;gap:5px}
+.o-head li{font-size:.94rem;color:var(--fg-2);padding-left:16px;position:relative}
+.o-head li::before{content:"";position:absolute;left:0;top:.62em;width:8px;height:2px;background:var(--human)}
+@media (max-width:820px){.o-head{grid-template-columns:1fr}}
+.boards{display:grid;grid-template-columns:1fr 1fr 1.4fr;gap:14px}
+.board{aspect-ratio:1/1;display:grid;place-items:center;border:1px solid var(--line-2);border-radius:8px;position:relative;min-width:0;padding:24px}
+.board .lbl{position:absolute;left:14px;top:12px;font-family:var(--font-mono);font-size:.64rem;letter-spacing:.08em;text-transform:uppercase;color:var(--fg-3)}
+.board .mk svg{width:clamp(110px,14vw,180px);height:auto}
+.board .mk.acl svg{width:clamp(160px,20vw,260px)}
+.board.wide{aspect-ratio:auto}
+.lk{display:flex;align-items:center;gap:16px}
+.lk .m svg{height:64px;width:auto}
+.lk .m.acl svg{height:42px}
+.lk .w{font-family:var(--font-display);font-weight:600;font-size:1.7rem;line-height:1.02;letter-spacing:-.015em}
+.ladder{display:flex;align-items:flex-end;gap:22px;flex-wrap:wrap;margin-top:28px;justify-content:center}
+.ladder div{display:grid;gap:8px;justify-items:center}
+.ladder .mono{color:var(--fg-3)}
+.wide .stack{display:grid;justify-items:center}
+@media (max-width:900px){.boards{grid-template-columns:1fr 1fr}.board.wide{grid-column:span 2}}
+
+.sys{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:14px}
+.card{border:1px solid var(--line-2);border-radius:8px;padding:18px}
+.card > .mono{color:var(--fg-3);display:block;margin-bottom:14px}
+.t3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.t3 div{display:grid;gap:8px}
+.t3 svg{width:100%;max-width:92px;height:auto}
+.t3 span{font-size:.8rem;color:var(--fg-2);line-height:1.3}
+.vars{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px}
+@media (max-width:900px){.sys{grid-template-columns:1fr}.vars{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.swatches{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px}
+.sw{display:grid;gap:8px}
+.sw .c{aspect-ratio:1/1;border:1px solid var(--line-2);border-radius:6px}
+.sw b{font-size:.95rem}
+.sw span{font-family:var(--font-mono);font-size:.72rem;color:var(--fg-3)}
+@media (max-width:820px){.swatches{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.type{border-top:1px solid var(--line-2)}
+.type > div{display:grid;grid-template-columns:210px minmax(0,1fr);gap:24px;padding-block:22px;border-bottom:1px solid var(--line);align-items:baseline}
+.type .mono{color:var(--fg-3)}
+@media (max-width:720px){.type > div{grid-template-columns:1fr;gap:8px}}
+.use{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;align-items:start}
+.use > div{border:1px solid var(--line-2);border-radius:8px;padding:20px;display:grid;gap:14px;align-content:start}
+.use .mono{color:var(--fg-3)}
+.tab{display:flex;align-items:center;gap:8px;background:var(--bg-3);border-radius:8px 8px 0 0;padding:9px 12px;max-width:240px;font-size:.82rem}
+.tab svg{width:16px;height:16px}
+.tab.lt{background:#ECEEF2;color:#0B0D12}
+.av{width:116px;height:116px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--line-2)}
+.av svg{width:62px;height:62px}
+.bcard{aspect-ratio:85/55;border:1px solid var(--line-2);border-radius:6px;padding:16px 18px;display:grid}
+.bcard .lk .m svg{height:40px}
+.bcard .lk .m.acl svg{height:26px}
+.bcard .lk .w{font-size:1.05rem}
+.bcard.back{align-content:end;gap:2px}
+.bcard.back span{font-size:.78rem;color:var(--fg-2)}
+@media (max-width:900px){.use{grid-template-columns:1fr}}
+.note{font-size:.9rem;color:var(--fg-3);margin-top:16px}
+.board .mk.mka svg{width:clamp(80px,9vw,120px)}
+.favrow{display:flex;gap:14px;align-items:flex-end;flex-wrap:wrap;justify-content:center;margin-top:22px}
+.favrow div{display:grid;gap:8px;justify-items:center}
+.fv{display:grid;place-items:center;background:#07080B;border:1px solid var(--line-2)}
+.fv svg{width:64%;height:auto}
+.fv.lt{background:#fff}
+.cons{border:1px solid var(--line-2);border-radius:8px;padding:clamp(18px,3vw,40px);background:var(--bg-2)}
+.cons svg{width:100%;height:auto;display:block}
+.rules{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border-top:1px solid var(--line-2);margin-top:22px}
+.rules div{padding:16px 20px 18px 0;margin-right:20px;border-right:1px solid var(--line);display:grid;gap:6px;align-content:start}
+.rules div:nth-child(3n){border-right:0;margin-right:0}
+.rules div:nth-child(n+4){border-top:1px solid var(--line)}
+.rules b{font-size:.98rem}
+.rules span{font-size:.9rem;color:var(--fg-2)}
+@media (max-width:820px){.rules{grid-template-columns:1fr}.rules div{border-right:0;margin-right:0;border-top:1px solid var(--line)}}
+.ba{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.ba .board{aspect-ratio:16/9}
+.ba .board .mk svg{width:clamp(150px,22vw,300px)}
+.chg{margin-top:20px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 40px}
+.chg li{font-size:.95rem;color:var(--fg-2);padding-left:16px;position:relative}
+.chg li::before{content:"";position:absolute;left:0;top:.62em;width:8px;height:2px;background:var(--agent)}
+@media (max-width:820px){.ba,.chg{grid-template-columns:1fr}}
+.explored{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.explored > div{border:1px solid var(--line-2);border-radius:8px;padding:18px;display:grid;gap:14px}
+.explored .pic{display:grid;place-items:center;aspect-ratio:16/10}
+.explored .pic svg{height:clamp(56px,7vw,86px);width:auto;max-width:100%}
+.explored b{font-size:.98rem}
+.explored p{font-size:.88rem;color:var(--fg-2);font-family:var(--font-serif)}
+@media (max-width:820px){.explored{grid-template-columns:1fr}}
+</style>
+
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="lockup" href="../" id="headlock"></a>
+    <span class="rule" aria-hidden="true"></span>
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="site-nav" id="nav" aria-label="Sections"><a href="#mark">Mark</a><a href="#construction">Construction</a><a href="#colour">Colour</a><a href="#system">Glyphs</a><a href="#type">Type</a><a href="#use">In use</a><a class="hl" href="../">Lab site ↗</a></nav>
+  </div>
+</header>
+
+<main>
+  <section class="wrap intro">
+    <p class="mono">Identity · Version 4 · September 2026</p>
+    <h1>Stencil ACL, the lab's mark</h1>
+    <p>Three block letters cut from one stencil. The A splits at the apex into a human leg and an agent leg, and the two touch only through the white bar: the point where people and AI agents meet. The C and L are cut the same way, so the three letters read as one family. It is now the mark of both sites.</p>
+    <div class="legend" id="legend"></div>
+  </section>
+
+  <section class="opt" id="mark"><div class="wrap">
+    <div class="boards">
+      <div class="board"><span class="lbl">On black</span><div class="mk acl" id="m-dark"></div></div>
+      <div class="board lt"><span class="lbl">On white</span><div class="mk acl" id="m-light"></div></div>
+      <div class="board gr wide"><span class="lbl">Lockup and sizes</span><div class="stack"><div class="lk" id="m-lock"></div><div class="ladder" id="m-ladder"></div></div></div>
+    </div>
+    <div class="boards" style="margin-top:14px;grid-template-columns:1fr 1fr 1.4fr">
+      <div class="board"><span class="lbl">The A alone</span><div class="mk mka" id="a-dark"></div></div>
+      <div class="board lt"><span class="lbl">The A alone</span><div class="mk mka" id="a-light"></div></div>
+      <div class="board gr wide"><span class="lbl">Favicon and avatar</span><div class="stack"><p class="meta" style="font-size:.9rem;max-width:34ch;text-align:center">Below about 16 px tall, use the A on its own.</p><div class="favrow" id="favrow"></div></div></div>
+    </div>
+  </div></section>
+
+  <section class="section" id="construction">
+    <div class="wrap">
+      <div class="sec-head"><span class="mono">Construction</span><div><h2>One height, one stroke, one cut</h2><p>Every letter is 40 units tall with 10-unit strokes, and every stencil cut is vertical and 3 units wide.</p></div></div>
+      <div class="cons" id="cons"></div>
+      <div class="rules">
+        <div><b>People and agents</b><span>Only the A carries colour: the amber leg is people, the blue leg is AI agents. They meet at the white bar and nowhere else.</span></div>
+        <div><b>Parallel legs</b><span>Both legs keep one width from foot to apex, so the A holds the same weight as the C and L.</span></div>
+        <div><b>One stencil</b><span>The A is cut at its apex, the C where the curve meets the arms, and the L where the stem meets the foot.</span></div>
+        <div><b>City lab in white</b><span>The C and L stay white on dark and black on light, so the human–agent pair always leads.</span></div>
+        <div><b>Clear space</b><span>Keep one stroke (10 units) free on every side. Never outline, stretch or recolour the legs.</span></div>
+        <div><b>Smallest size</b><span>The full mark down to 16 px tall; the A alone below that, for favicons and app icons.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="refine">
+    <div class="wrap">
+      <div class="sec-head"><span class="mono">What changed</span><div><h2>From version 3 to version 4</h2></div></div>
+      <div class="ba">
+        <div class="board"><span class="lbl">Version 3</span><div class="mk acl" id="v3"></div></div>
+        <div class="board"><span class="lbl">Version 4</span><div class="mk acl" id="v4"></div></div>
+      </div>
+      <ul class="chg">
+        <li>The legs of the A have parallel edges; in version 3 they tapered towards the apex.</li>
+        <li>The white bar sits inside the A and no longer cuts across the coloured legs.</li>
+        <li>The C is round, so it reads as a C, not an E or a bracket, even at 16 px.</li>
+        <li>All three letters share one cap height, one stroke and one 3-unit cut.</li>
+        <li>Letter spacing is set by eye: tighter after the A, a little wider after the open C.</li>
+        <li>The A on its own is the new favicon and avatar.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="colour">
+    <div class="wrap">
+      <div class="sec-head"><span class="mono">Colour</span><div><h2>People, agents, city</h2><p>Amber always means people and blue always means AI agents, in the logo, the glyphs and the live simulation. White marks where they interact. Figures from the papers keep their own colours on the dark ground.</p></div></div>
+      <div class="swatches" id="swatches"></div>
+    </div>
+  </section>
+
+  <section class="section" id="system">
+    <div class="wrap">
+      <div class="sec-head"><span class="mono">Glyph system</span><div><h2>One grid, many meetings</h2><p>Each research stage and project can take its own glyph: a human path, an agent path and the node where they meet, drawn on the same five-by-five grid of intersections.</p></div></div>
+      <div class="sys"><div class="card"><span class="mono">Research route</span><div class="t3" id="t3"></div></div><div class="card"><span class="mono">Variations</span><div class="vars" id="vars"></div></div></div>
+    </div>
+  </section>
+
+  <section class="section" id="type">
+    <div class="wrap">
+      <div class="sec-head"><span class="mono">Typography</span><div><h2>Four open-source faces</h2></div></div>
+      <div class="type">
+        <div><span class="mono">Display · Archivo</span><span style="font-family:var(--font-display);font-weight:800;font-stretch:112%;font-variation-settings:'wdth' 112;font-size:clamp(2rem,4.4vw,3.4rem);line-height:1">agentic city lab.</span></div>
+        <div><span class="mono">Text · Source Serif 4</span><span style="font-family:var(--font-serif);font-size:1.2rem;color:var(--fg-2);max-width:60ch">Cities now run on human–AI interaction. Couriers work with dispatch algorithms, cyclists follow navigation apps, and language-model agents can plan a walk.</span></div>
+        <div><span class="mono">Interface · Instrument Sans</span><span style="font-size:1.05rem">Projects · Publications · People · Contact</span></div>
+        <div><span class="mono">Data · IBM Plex Mono</span><span style="font-family:var(--font-mono);font-size:.95rem">17:42 · RESIDENT 18 → PLANNER AGENT 03 · 1.2 KM</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="use">
+    <div class="wrap">
+      <div class="sec-head"><span class="mono">In use</span><div><h2>Stencil ACL applied</h2></div></div>
+      <div class="use">
+        <div><span class="mono">Browser tab</span><div class="tab"><span id="fav"></span>Agentic City Lab</div><div class="tab lt"><span id="fav2"></span>Agentic City Lab</div></div>
+        <div><span class="mono">Avatar</span><div style="display:flex;gap:14px;flex-wrap:wrap"><div class="av" id="av1"></div><div class="av lt" id="av2"></div></div></div>
+        <div><span class="mono">Business card</span><div class="bcard"><div class="lk" id="card"></div></div><div class="bcard back lt"><b>Chengbo (Nicholas) Zhang</b><span>Founder &amp; Director</span><span style="font-family:var(--font-mono);font-size:.68rem;margin-top:6px">chengbo.zhang@mail.mcgill.ca · Montréal</span></div></div>
+      </div>
+      <p class="note">SVG files of the mark, the A alone and the lockup (dark, light, white and black) are in the identity/logos folder of the website package.</p>
+    </div>
+  </section>
+
+  <section class="section" id="explored">
+    <div class="wrap">
+      <div class="sec-head"><span class="mono">Explored</span><div><h2>Other directions from version 3</h2><p>Kept for the record. The glyph system still borrows the compass idea from option 1.</p></div></div>
+      <div class="explored" id="exp"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot"><div class="wrap"><p>Agentic City Lab identity, version 4. September 2026.</p><p class="mono meta"><a href="../">Lab site</a> · <a href="../../">Director</a></p></div></footer>
+
+<script src="../../assets/data.js"></script>
+<script>window.ACL_FIG="../../assets/figures/"</script>
+<script src="../../assets/gfx.js"></script>
+<script>
+(function(){
+  const D = window.ACL_DATA, E = ACL.esc, M = ACL.MARKS, $ = id => document.getElementById(id); ACL.menu();
+  $('headlock').innerHTML = ACL.lockup();
+  const H='var(--human)', A='var(--agent)', F='var(--fg)';
+  $('legend').innerHTML = [
+    ['People','The amber leg',`<svg viewBox="0 0 40 40"><polygon points="8,34 15,34 21,6 16,6" style="fill:${H}"/></svg>`],
+    ['AI agents','The blue leg',`<svg viewBox="0 0 40 40"><polygon points="32,34 25,34 19,6 24,6" style="fill:${A}"/></svg>`],
+    ['Interaction','The white bar where they meet',`<svg viewBox="0 0 40 40"><rect x="9" y="17" width="22" height="7" style="fill:${F}"/></svg>`],
+    ['The city lab','C and L, cut from the same stencil',`<svg viewBox="0 0 40 40"><path d="M20 6A14 14 0 0 0 20 34V27A7 7 0 0 1 20 13Z" style="fill:${F}"/><rect x="22" y="6" width="10" height="7" style="fill:${F}"/><rect x="22" y="27" width="10" height="7" style="fill:${F}"/></svg>`]
+  ].map(([n,d,s]) => `<div>${s}<p><b>${n}</b><span>${d}</span></p></div>`).join('');
+
+  const mk = ACL.mark(), mono = ACL.monogram();
+  $('m-dark').innerHTML = $('m-light').innerHTML = mk;
+  $('a-dark').innerHTML = $('a-light').innerHTML = mono;
+  $('m-lock').innerHTML = `<span class="m acl">${mk}</span><span class="w">agentic<br>city lab.</span>`;
+  $('m-ladder').innerHTML = [40,24,16].map(s => `<div><span style="height:${s}px;display:block">${mk.replace('<svg ', `<svg style="height:${s}px;width:auto" `)}</span><span class="mono num">${s} px</span></div>`).join('');
+  $('favrow').innerHTML = [[64,14],[32,7],[16,4]].map(([s,r]) => `<div><span class="fv" style="width:${s}px;height:${s}px;border-radius:${r}px">${mono}</span><span class="mono num">${s} px</span></div>`).join('')
+    + `<div><span class="fv" style="width:64px;height:64px;border-radius:50%">${mono}</span><span class="mono">Avatar</span></div>`;
+
+  /* construction drawing */
+  const S = ACL.STENCIL, inner = mk.replace(/^<svg[^>]*>/, '').replace(/<\/svg>$/, '');
+  const g = 'var(--fg-3)', guide = (x1,y1,x2,y2,d) => `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" style="stroke:${g};stroke-width:.22${d ? ';stroke-dasharray:1.2 1.2' : ''}"/>`;
+  const txt = (x,y,t,a,c) => `<text x="${x}" y="${y}" text-anchor="${a || 'middle'}" style="fill:${c || 'var(--fg-2)'};font:500 2.5px 'IBM Plex Mono',monospace;letter-spacing:.06em">${t}</text>`;
+  const dim = (x1,x2,y,t) => guide(x1,y,x2,y) + guide(x1,y-1,x1,y+1) + guide(x2,y-1,x2,y+1) + txt((x1+x2)/2, y-1.8, t);
+  const vdim = (x,y1,y2,t) => guide(x,y1,x,y2) + guide(x-1,y1,x+1,y1) + guide(x-1,y2,x+1,y2) + txt(x-2, (y1+y2)/2+.9, t, 'end');
+  const c0 = S.cx + S.h/2, cutA = S.aw/2 - S.g/2, W = S.w;
+  let d = '';
+  [0, S.bar, S.bar + S.bh, S.h].forEach(y => d += guide(-4, y, W + 4, y, y !== 0 && y !== S.h));
+  [cutA, cutA + S.g, c0, c0 + S.g, S.lx + S.t, S.lx + S.t + S.g].forEach(x => d += guide(x, -4, x, S.h + 4, true));
+  d += vdim(-8, 0, S.h, '40') + dim(S.lx, S.lx + S.t, -7, '10') + dim(c0, c0 + S.g, -7, '3') + dim(cutA, cutA + S.g, -7, '3') + dim(S.lx + S.t, S.lx + S.t + S.g, -7, '3');
+  d += txt(W + 6, 1.2, 'CAP', 'start', g) + txt(W + 6, S.h + .9, 'BASE', 'start', g) + txt(W + 6, S.bar + S.bh/2 + .9, 'BAR', 'start', g);
+  d += txt(S.aw/2, S.h + 8, 'PEOPLE · AGENTS', 'middle', 'var(--fg-2)') + txt(S.cx + S.cw/2, S.h + 8, 'CITY', 'middle', 'var(--fg-2)') + txt(S.lx + S.lw/2, S.h + 8, 'LAB', 'middle', 'var(--fg-2)');
+  $('cons').innerHTML = `<svg viewBox="-16 -18 ${W + 34} ${S.h + 30}" role="img" aria-label="Construction of the Stencil ACL mark" xmlns="http://www.w3.org/2000/svg"><g style="opacity:.94">${inner}</g>${d}</svg>`;
+
+  $('v3').innerHTML = M.aclStencilV3.mark(); $('v4').innerHTML = mk;
+
+  $('t3').innerHTML = D.themes.map((t, i) => `<div>${ACL.glyph(t.id, {label: t.name})}<span>0${i+1} ${E(t.step)}<br>${E(t.name)}</span></div>`).join('');
+  $('vars').innerHTML = Array.from({length: 12}, (_, i) => ACL.variant(i + 1)).join('');
+  const sw = [['People','#FFB23E','Human leg, paths, requests'],['AI agents','#5C78FF','Agent leg, paths, plans'],['Interaction','#F2F3F5','Meeting bar, C and L, text'],['Ground','#07080B','Page and city'],['Graphite','#151821','Blocks, cards'],['Street','#2B303B','Grid, rules']];
+  $('swatches').innerHTML = sw.map(([n,h,r]) => `<div class="sw"><div class="c" style="background:${h}"></div><b>${n}</b><span>${h}</span><span style="text-transform:none;letter-spacing:0">${r}</span></div>`).join('');
+  ['fav','fav2','av1','av2'].forEach(id => $(id).innerHTML = mono);
+  $('card').innerHTML = `<span class="m acl">${mk}</span><span class="w">agentic<br>city lab.</span>`;
+  const ex = [['compassA','Compass A','Two legs lean into one node, like the arms of a planner\'s compass.'],['stencilA','Stencil A','Two solid legs with a gap at the apex, without the other letters.'],['aclPath','Path ACL','The three letters drawn as routes with round ends.']];
+  $('exp').innerHTML = ex.map(([k,n,t]) => `<div><div class="pic">${M[k].mark()}</div><b>${n}</b><p>${t}</p></div>`).join('');
+})();
+</script>
+
+</body>
+</html>
